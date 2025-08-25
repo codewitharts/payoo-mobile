@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payoo | Make Payment Faster</title>
+  <link rel="shortcut icon" href="./payoo.png" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="flex justify-center items-start bg-stone-200 h-screen p-2">
+  <main class="p-2 mt-4 ">
+    <nav class="bg-[url('./assets/bg.png')] flex items-center justify-center bg-no-repeat bg-cover p-6">
+      <img src="./payoo.png" alt="" class="w-20 mt-4">
+    </nav>
+    <form class="mt-2 flex items-center justify-center bg-white rounded-xl p-4">
+      <fieldset class="fieldset border-base-300 rounded-box w-xs border p-4">
+        <legend class="fieldset-legend text-2xl text-primary">Login</legend>
+
+        <label class="label text-xl text-black">Mobile Number</label>
+        <input type="text" id="input-number" class="input text-lg" placeholder="Enter your number" />
+
+        <label class="label text-xl mt-4 text-black">4 Digit Pin</label>
+        <input type="password" id="input-pin" class="input text-lg" placeholder="Enter 4 Digit Pin" />
+
+        <button id="login-btn" class="btn btn-primary mt-4 text-xl py-6">Login</button>
+      </fieldset>
+    </form>
+  </main>
+
+
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
