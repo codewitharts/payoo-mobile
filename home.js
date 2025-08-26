@@ -12,6 +12,46 @@ myElement('logout-btn').addEventListener('click', function () {
 // Display Balance
 let displayAmount = myElement('display-amount').innerText;
 let convertedAmount = parseInt(displayAmount);
+
+// Toggle
+const allContentdivs = [
+  'add-money-div',
+  'cash-out-div',
+  'transfer-money-div',
+  'get-bonus-div',
+  'pay-bill-div',
+  ,
+  'trans-div',
+];
+function hideAllDivs() {
+  allContentdivs.forEach(id => {
+    myElement(id).classList.add('hidden');
+  });
+}
+function showDiv(id) {
+  hideAllDivs();
+  myElement(id).classList.remove('hidden');
+}
+
+myElement('add-money-cart').addEventListener('click', function () {
+  showDiv('add-money-div');
+});
+myElement('cash-out-cart').addEventListener('click', function () {
+  showDiv('cash-out-div');
+});
+myElement('transfer-money-cart').addEventListener('click', function () {
+  showDiv('transfer-money-div');
+});
+myElement('get-bonus-cart').addEventListener('click', function () {
+  showDiv('get-bonus-div');
+});
+myElement('pay-bill-cart').addEventListener('click', function () {
+  showDiv('pay-bill-div');
+});
+myElement('transaction-cart').addEventListener('click', function () {
+  showDiv('trans-div');
+});
+
 // Add Money
 const addMoney = myElement('add-money-btn');
 addMoney.addEventListener('click', function (e) {
@@ -44,7 +84,8 @@ addMoney.addEventListener('click', function (e) {
     alert('Invalid Pin');
     return;
   }
-
   convertedAmount = parseFloat(convertedAmount) + parseFloat(addAmount);
   myElement('display-amount').innerText = convertedAmount;
+
+  console.log(typeof convertAmount);
 });

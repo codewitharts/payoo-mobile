@@ -49,32 +49,36 @@
           </div>
 
           <!-- Cart -->
-          <div class="p-3 py-4 border-2 border-gray-300 rounded-2xl flex flex-col justify-center items-center">
+          <div id="cash-out-cart"
+            class="p-3 py-4 border-2 border-gray-300 rounded-2xl flex flex-col justify-center items-center">
             <img src="./assets/money1.png" alt="" class="w-10">
             <p class="text-gray-800 text-md mt-3">Cashout</p>
           </div>
 
           <!-- Cart -->
-          <div
+          <div id="transfer-money-cart"
             class="p-3 py-4 border-2 border-gray-300 rounded-2xl flex flex-col justify-center items-center text-center">
             <img src="./assets/send1.png" alt="" class="w-10">
             <p class="text-gray-800 text-md mt-3">Transfer Money</p>
           </div>
 
           <!-- Cart -->
-          <div class="p-3 py-4 border-2 border-gray-300 rounded-2xl flex flex-col justify-center items-center">
+          <div id="get-bonus-cart"
+            class="p-3 py-4 border-2 border-gray-300 rounded-2xl flex flex-col justify-center items-center">
             <img src="./assets/bonus1.png" alt="" class="w-10">
             <p class="text-gray-800 text-md mt-3">Get Bonus</p>
           </div>
 
           <!-- Cart -->
-          <div class="p-3 py-4 border-2 border-gray-300 rounded-2xl flex flex-col justify-center items-center">
+          <div id="pay-bill-cart"
+            class="p-3 py-4 border-2 border-gray-300 rounded-2xl flex flex-col justify-center items-center">
             <img src="./assets/purse1.png" alt="" class="w-10">
             <p class="text-gray-800 text-md mt-3">Pay Bill</p>
           </div>
 
           <!-- Cart -->
-          <div class="p-3 py-4  border-2 border-gray-300 rounded-2xl flex flex-col justify-center items-center">
+          <div id="transaction-cart"
+            class="p-3 py-4  border-2 border-gray-300 rounded-2xl flex flex-col justify-center items-center">
             <img src="./assets/transaction1.png" alt="" class="w-10">
             <p class="text-gray-800 text-md mt-3">Transactions</p>
           </div>
@@ -84,7 +88,7 @@
 
     <div>
       <!-- Add Money -->
-      <div id="add-money-div" class="mx-w-xl mx-auto p-6">
+      <div id="add-money-div" class="mx-w-xl mx-auto p-6 hidden">
         <h2 class="font-bold text-xl text-black">Add Money</h2>
         <form id="add-mone-form" class="w-full flex flex-col bg-white p-4 rounded-2xl mt-4">
           <label class="label text-black">Select A Bank</label>
@@ -110,7 +114,7 @@
       </div>
 
       <!-- Cash Out -->
-      <div class=" mx-w-xl mx-auto p-6">
+      <div id="cash-out-div" class=" mx-w-xl mx-auto p-6 hidden">
         <h2 class="font-bold text-xl text-black">Cash Out</h2>
         <form class="w-full flex flex-col bg-white p-4 rounded-2xl mt-4">
           <label class="label text-black">Agent Number</label>
@@ -128,7 +132,7 @@
       </div>
 
       <!-- Transfer Money -->
-      <div class=" mx-w-xl mx-auto p-6">
+      <div id="transfer-money-div" class=" mx-w-xl mx-auto p-6 hidden">
         <h2 class="font-bold text-xl text-black">Transfer Money</h2>
         <form class="w-full flex flex-col bg-white p-4 rounded-2xl mt-4">
           <label class="label text-black">User Account Number</label>
@@ -145,8 +149,8 @@
         </form>
       </div>
 
-      <!-- Pay Bill -->
-      <div class=" mx-w-xl mx-auto p-6">
+      <!-- Get Bonus  -->
+      <div id="get-bonus-div" class=" mx-w-xl mx-auto p-6 hidden">
         <h2 class="font-bold text-xl text-black">Get Bonus</h2>
         <form class="w-full flex flex-col bg-white p-4 rounded-2xl mt-4">
           <label class="label text-black">Enter Bonus Coupon</label>
@@ -159,7 +163,7 @@
 
 
       <!-- Pay Bill -->
-      <div class=" mx-w-xl mx-auto p-6">
+      <div id="pay-bill-div" class=" mx-w-xl mx-auto p-6 hidden">
         <h2 class="font-bold text-xl text-black">Pay Bill</h2>
         <form class="w-full flex flex-col bg-white p-4 rounded-2xl mt-4">
 
@@ -189,7 +193,7 @@
       </div>
 
       <!-- Transaction History -->
-      <div class=" mx-w-xl mx-auto p-6">
+      <div id="trans-div" class=" mx-w-xl mx-auto p-6 hidden">
         <div class="flex justify-between items-center">
           <h2 class="font-bold text-xl text-black">Transaction History</h2>
           <p>:</p>
